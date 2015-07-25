@@ -1,4 +1,5 @@
 this is the first file in github
+<<<<<<< HEAD
 Last login: Sat Jul 18 13:19:31 on console
 madeiMac:~ duoduozp$ ll -al ~/.ssh
 -bash: ll: command not found
@@ -349,3 +350,6 @@ madeiMac:git duoduozp$ git stash
 Saved working directory and index state WIP on master: 1bdd94c Rename bygitfile to mygitfile
 HEAD is now at 1bdd94c Rename bygitfile to mygitfile
 madeiMac:git duoduozp$ 
+=======
+a conflict version
+>>>>>>> 38cfed97405394c92e7feaa71a879113a1881a9c
