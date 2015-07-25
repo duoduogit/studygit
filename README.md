@@ -1,0 +1,2 @@
+# studygit
+first git repository
