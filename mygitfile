@@ -1,1 +1,351 @@
 this is the first file in github
+Last login: Sat Jul 18 13:19:31 on console
+madeiMac:~ duoduozp$ ll -al ~/.ssh
+-bash: ll: command not found
+madeiMac:~ duoduozp$ ls -al ~/.ssh
+ls: /Users/duoduozp/.ssh: No such file or directory
+madeiMac:~ duoduozp$ ssh-keygen -t rsa -b 4096 -C "duoduo_zp@sina.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/duoduozp/.ssh/id_rsa): 
+Created directory '/Users/duoduozp/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/duoduozp/.ssh/id_rsa.
+Your public key has been saved in /Users/duoduozp/.ssh/id_rsa.pub.
+The key fingerprint is:
+0a:2a:7f:c3:0c:43:a9:49:03:34:39:42:9a:ad:e8:36 duoduo_zp@sina.com
+The key's randomart image is:
++--[ RSA 4096]----+
+|o+.              |
+|+=.              |
+|= o.             |
+|.+o              |
+|++. .   S        |
+|+ o. . .         |
+|.E.=  .          |
+|.o. =            |
+|  .. .           |
++-----------------+
+madeiMac:~ duoduozp$ eval "$(ssh-agent -s)"
+Agent pid 15636
+madeiMac:~ duoduozp$ ls -al ~/.ssh
+total 16
+drwx------   4 duoduozp  staff   136  7 25 13:28 .
+drwxr-xr-x+ 14 duoduozp  staff   476  7 25 13:28 ..
+-rw-------   1 duoduozp  staff  3243  7 25 13:28 id_rsa
+-rw-r--r--   1 duoduozp  staff   744  7 25 13:28 id_rsa.pub
+madeiMac:~ duoduozp$ ls -al 
+total 48
+drwxr-xr-x+ 14 duoduozp  staff    476  7 25 13:28 .
+drwxr-xr-x   7 root      admin    238 10 17  2014 ..
+-r--------   1 duoduozp  staff      9 10 25  2014 .CFUserTextEncoding
+-rw-r--r--@  1 duoduozp  staff  18436  7 25 13:33 .DS_Store
+drwx------  15 duoduozp  staff    510  7 19 20:44 .Trash
+drwx------   4 duoduozp  staff    136  7 25 13:28 .ssh
+drwx------+  6 duoduozp  staff    204  7 19 20:44 Desktop
+drwx------+  8 duoduozp  staff    272  1 31 14:09 Documents
+drwx------+ 31 duoduozp  staff   1054  7 19 20:36 Downloads
+drwx------+ 59 duoduozp  staff   2006 12 23  2014 Library
+drwx------+  5 duoduozp  staff    170 11  9  2014 Movies
+drwx------+  5 duoduozp  staff    170  7  5  2013 Music
+drwx------+  8 duoduozp  staff    272  7  9  2013 Pictures
+drwxr-xr-x+  5 duoduozp  staff    170  3  2  2014 Public
+madeiMac:~ duoduozp$ cd .ssh
+madeiMac:.ssh duoduozp$ ll
+-bash: ll: command not found
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub
+madeiMac:.ssh duoduozp$ more id_rsa
+-----BEGIN RSA PRIVATE KEY-----
+MIIJKAIBAAKCAgEA26J+n24nOsndzLr3OblzEfv/IlRkwukZqX8swQcb5DhAub0E
+MkGTVn5n2dHXslYNk+4Urzl3WHNciDXOmlcXSiDfMAKu+7fRLRPkYgDSArbXOJxy
+RLAHfM5MSvMReHz6xciLVXoH1W6ryOtN8ly5Fw1pf8iBLU1vUh7IOloDRPTdNbME
+4blUtcqpROftsVm+Ty4DySCcQKnXFQ+Mhp6u+QVz/19LcLZCiPpbp+XPH4nBwV4t
+hwoApoM26ha6Ai5dq25rzXuoAipKFtnZXfUCgCHjjrq5MNbnLXkLzIQ+RuH/+lV8
+3uvEIOgqN9ngPaashLawrQt4T30/P9NdPu/HzT79udvC1erz+ABfaXbVLGH+GzFp
+NNSW95Qyf3YjA7wg/wYqarNuk2nCu8kK9nrNmGmQR4RH1NExOu3t8BMwMa1OGJmP
+efgvfiq6HtqvPJVBqr+NW9FG0r9i2Wr1zvAZY6OHkST4aaukP3uSjnvufGsNxIYg
+L8AzvhAcOcKFaAo2m8Qwe+txSElo2zbQA4hRNoAR8dnaQP3/tgHuKPZRluPk6RYv
+RdaMS4t/Xu/HfSLVpRvCje6Oqj56hZmrPq5XUuZz0DWIquptsn0CaTYA0ku7jD6g
+dGLIhtPcUQdE/6zssxQhWDl48Q1C3xOOQMhLNMTY+vdwnIMgzmaFD9hCvj8CAwEA
+AQKCAgB+SLYpkTp5MOyY9L+Frz2cj5oo8QFmmISq0na3HhFJbZa5tRaeltnSl6e6
+tE8jORthfTjjb1VRxDLmFpoOYBkCBFiP0FswXIanNpLQTsxxxxOEd1+0YspLVorD
+ZXMcJjBCXIbQxPOQIqwfQDx3KB08RfftAypTE/z36L8T3gGXOnuejqo150vvovEk
+r34ZxRIJkNmYYWm2PHFwqJoSJVdR03LY2MAVtJYZEGp25UnsRlbjifT/eh7ZnwSK
+IDsfWe19zmWppnn5lLs43FWBEok3h0TCIlas4EPX/4trMnZkZzm5hEHiIwmIKjVs
+G5g1mooDXM/FD51Dhy5A0pUAxPnJ1oGMCC9QwloD0bV6mzbs1RJJQFNRgndCpjzl
+uO1VF6EgtnIW8aEzdQ56Wt5LrCMKhc1uXZKjGsL8lcVDVFcI3ImHi+KXx9gpSh91
+bmeRIlggsE+RvcXOKgGb7CgJl8ax1kJUrTEGUsiJSfSk4y+4CS760YbtTla6XW/8
+GhvVkCMSOexJ2BIT0jY58qI3kStxfSIghUOWC1dJivrI5hwEgVjNal3yiCQgLnI/
+QcHJVOc+Z1HMdZQB0dZsMJn4f11bahHQHF1V/NlWixFBJcnoPpAe3zMBZQtZb/7u
+Ojnaf9ejd/ruzvTdFGvqOdTV/6dKqw2coShm2nMaNk0cI9SIoQKCAQEA+CocXo8K
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub
+madeiMac:.ssh duoduozp$ cd id_rsa.pub
+-bash: cd: id_rsa.pub: Not a directory
+madeiMac:.ssh duoduozp$ more id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbon6fbic6yd3Muvc5uXMR+/8iVGTC6RmpfyzBBxvkOEC5vQQyQZNWfmfZ0deyVg2T7hSvOXdYc1yINc6aVxdKIN8wAq77t9EtE+RiANICttc4nHJEsAd8zkxK8xF4fPrFyItVegfVbqvI603yXLkXDWl/yIEtTW9SHsg6WgNE9N01swThuVS1yqlE5+2xWb5PLgPJIJxAqdcVD4yGnq75BXP/X0twtkKI+lun5c8ficHBXi2HCgCmgzbqFroCLl2rbmvNe6gCKkoW2dld9QKAIeOOurkw1ucteQvMhD5G4f/6VXze68Qg6Co32eA9pqyEtrCtC3hPfT8/010+78fNPv2528LV6vP4AF9pdtUsYf4bMWk01Jb3lDJ/diMDvCD/Bipqs26TacK7yQr2es2YaZBHhEfU0TE67e3wEzAxrU4YmY95+C9+Kroe2q88lUGqv41b0UbSv2LZavXO8Bljo4eRJPhpq6Q/e5KOe+58aw3EhiAvwDO+EBw5woVoCjabxDB763FISWjbNtADiFE2gBHx2dpA/f+2Ae4o9lGW4+TpFi9F1oxLi39e78d9ItWlG8KN7o6qPnqFmas+rldS5nPQNYiq6m2yfQJpNgDSS7uMPqB0YsiG09xRB0T/rOyzFCFYOXjxDULfE45AyEs0xNj693CcgyDOZoUP2EK+Pw== duoduo_zp@sina.com
+madeiMac:.ssh duoduozp$ 
+madeiMac:.ssh duoduozp$ cd ..
+madeiMac:~ duoduozp$ ssh-add ~/.ssh/id_rsa
+Identity added: /Users/duoduozp/.ssh/id_rsa (/Users/duoduozp/.ssh/id_rsa)
+madeiMac:~ duoduozp$ cd .ssh
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub
+madeiMac:.ssh duoduozp$ more id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbon6fbic6yd3Muvc5uXMR+/8iVGTC6RmpfyzBBxvkOEC5vQQyQZNWfmfZ0deyVg2T7hSvOXdYc1yINc6aVxdKIN8wAq77t9EtE+RiANICttc4nHJEsAd8zkxK8xF4fPrFyItVegfVbqvI603yXLkXDWl/yIEtTW9SHsg6WgNE9N01swThuVS1yqlE5+2xWb5PLgPJIJxAqdcVD4yGnq75BXP/X0twtkKI+lun5c8ficHBXi2HCgCmgzbqFroCLl2rbmvNe6gCKkoW2dld9QKAIeOOurkw1ucteQvMhD5G4f/6VXze68Qg6Co32eA9pqyEtrCtC3hPfT8/010+78fNPv2528LV6vP4AF9pdtUsYf4bMWk01Jb3lDJ/diMDvCD/Bipqs26TacK7yQr2es2YaZBHhEfU0TE67e3wEzAxrU4YmY95+C9+Kroe2q88lUGqv41b0UbSv2LZavXO8Bljo4eRJPhpq6Q/e5KOe+58aw3EhiAvwDO+EBw5woVoCjabxDB763FISWjbNtADiFE2gBHx2dpA/f+2Ae4o9lGW4+TpFi9F1oxLi39e78d9ItWlG8KN7o6qPnqFmas+rldS5nPQNYiq6m2yfQJpNgDSS7uMPqB0YsiG09xRB0T/rOyzFCFYOXjxDULfE45AyEs0xNj693CcgyDOZoUP2EK+Pw== duoduo_zp@sina.com
+madeiMac:.ssh duoduozp$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.252.128)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of known hosts.
+Hi duoduozp! You've successfully authenticated, but GitHub does not provide shell access.
+madeiMac:.ssh duoduozp$ git clone git@github.com:duoduozp/studygit.git
+Cloning into 'studygit'...
+Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+madeiMac:.ssh duoduozp$ git clone git@github.com:duoduozp/studygit
+Cloning into 'studygit'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+madeiMac:.ssh duoduozp$ git clone git@github.com:duoduogit/studygit
+Cloning into 'studygit'...
+Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Checking connectivity... done.
+madeiMac:.ssh duoduozp$ ll
+-bash: ll: command not found
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub	known_hosts	studygit
+madeiMac:.ssh duoduozp$ cd studygit
+madeiMac:studygit duoduozp$ ls
+README.md	mygitfile
+madeiMac:studygit duoduozp$ more README.md
+# studygit
+first git repository
+madeiMac:studygit duoduozp$ more mygitfile
+this is the first file in github
+madeiMac:studygit duoduozp$ git clone
+You must specify a repository to clone.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --single-branch       clone only one branch, HEAD or --branch
+    --dissociate          use --reference only while cloning
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+
+madeiMac:studygit duoduozp$ git clone git@github.com:duoduogit/studygit.git /study/git
+fatal: could not create leading directories of '/study/git': Permission denied
+madeiMac:studygit duoduozp$ git clone git@github.com:duoduogit/studygit.git study/git
+Cloning into 'study/git'...
+Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Checking connectivity... done.
+madeiMac:studygit duoduozp$ cd study/git
+madeiMac:git duoduozp$ ls
+README.md	mygitfile
+madeiMac:git duoduozp$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+madeiMac:git duoduozp$ pwd
+/Users/duoduozp/.ssh/studygit/study/git
+madeiMac:git duoduozp$ cd ..
+madeiMac:study duoduozp$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+madeiMac:study duoduozp$ cd ..
+madeiMac:studygit duoduozp$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	study/
+
+nothing added to commit but untracked files present (use "git add" to track)
+madeiMac:studygit duoduozp$ cd ..
+madeiMac:.ssh duoduozp$ pwd
+/Users/duoduozp/.ssh
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub	known_hosts	studygit
+madeiMac:.ssh duoduozp$ cd ..
+madeiMac:~ duoduozp$ cd ..
+madeiMac:Users duoduozp$ pwd
+/Users
+madeiMac:Users duoduozp$ cd ..
+madeiMac:/ duoduozp$ pwd
+/
+madeiMac:/ duoduozp$ ls
+Applications			home
+Library				installer.failurerequests
+Network				net
+System				opt
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc				用户信息
+madeiMac:/ duoduozp$ cd home
+madeiMac:home duoduozp$ ls
+madeiMac:home duoduozp$ cd usr
+-bash: cd: usr: No such file or directory
+madeiMac:home duoduozp$ cd ..
+madeiMac:/ duoduozp$ cd usr
+madeiMac:usr duoduozp$ ls
+X11		bin		libexec		share
+X11R6		lib		sbin		standalone
+madeiMac:usr duoduozp$ cd ..
+madeiMac:/ duoduozp$ cd Users
+madeiMac:Users duoduozp$ ls
+Guest		Shared		duoduozp	manan
+madeiMac:Users duoduozp$ cd duoduozp
+madeiMac:~ duoduozp$ ls
+Desktop		Downloads	Movies		Pictures	study
+Documents	Library		Music		Public
+madeiMac:~ duoduozp$ cd study
+madeiMac:study duoduozp$ ls
+git
+madeiMac:study duoduozp$ cd git
+madeiMac:git duoduozp$ ls
+madeiMac:git duoduozp$ cd ..
+madeiMac:study duoduozp$ pwd
+/Users/duoduozp/study
+madeiMac:study duoduozp$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+madeiMac:study duoduozp$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+madeiMac:study duoduozp$ ls
+git
+madeiMac:study duoduozp$ cd ..
+madeiMac:~ duoduozp$ cd .ssh
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub	known_hosts	studygit
+madeiMac:.ssh duoduozp$ rm studygit
+rm: studygit: is a directory
+madeiMac:.ssh duoduozp$ rm -rf studygit
+madeiMac:.ssh duoduozp$ ls
+id_rsa		id_rsa.pub	known_hosts
+madeiMac:.ssh duoduozp$ git clone git@github.com:duoduogit/studygit.git /Users/duoduozp/study
+fatal: destination path '/Users/duoduozp/study' already exists and is not an empty directory.
+madeiMac:.ssh duoduozp$ git clone git@github.com:duoduogit/studygit.git /Users/duoduozp/study/git
+Cloning into '/Users/duoduozp/study/git'...
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Checking connectivity... done.
+madeiMac:.ssh duoduozp$ git checkout
+fatal: Not a git repository (or any of the parent directories): .git
+madeiMac:.ssh duoduozp$ cd /Users
+madeiMac:Users duoduozp$ cd duoduozp
+madeiMac:~ duoduozp$ cd study
+madeiMac:study duoduozp$ cd git
+madeiMac:git duoduozp$ ls
+README.md	mygitfile
+madeiMac:git duoduozp$ git checkout
+Your branch is up-to-date with 'origin/master'.
+madeiMac:git duoduozp$ git checkout master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+madeiMac:git duoduozp$ git checkout issue-101
+error: pathspec 'issue-101' did not match any file(s) known to git.
+madeiMac:git duoduozp$ git checkout -b issue-101
+Switched to a new branch 'issue-101'
+madeiMac:git duoduozp$ git checkout -b 
+error: switch `b' requires a value
+usage: git checkout [options] <branch>
+   or: git checkout [options] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach the HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+
+madeiMac:git duoduozp$ git status
+On branch issue-101
+nothing to commit, working directory clean
+madeiMac:git duoduozp$ git checkout issue-101
+Already on 'issue-101'
+madeiMac:git duoduozp$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+madeiMac:git duoduozp$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+madeiMac:git duoduozp$ git push -u origin issue-101
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:duoduogit/studygit.git
+ * [new branch]      issue-101 -> issue-101
+Branch issue-101 set up to track remote branch issue-101 from origin.
+madeiMac:git duoduozp$ git stash
+No local changes to save
+madeiMac:git duoduozp$ ls
+README.md	mygitfile
+madeiMac:git duoduozp$ vi stashfile.txt
+madeiMac:git duoduozp$ ls
+README.md	mygitfile	stashfile.txt
+madeiMac:git duoduozp$ git stash
+No local changes to save
+madeiMac:git duoduozp$ git add stashfile.txt
+madeiMac:git duoduozp$ git stash
+Saved working directory and index state WIP on master: 1bdd94c Rename bygitfile to mygitfile
+HEAD is now at 1bdd94c Rename bygitfile to mygitfile
+madeiMac:git duoduozp$ 
